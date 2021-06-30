@@ -1,0 +1,44 @@
+//nome idade e endereço
+void main() {
+    var nome = 'Isadora';
+    var idade = '18';
+    var ender = 'Ipiranga 111';
+    print(nome +", "+ idade +" anos, moradorando "+ ender);
+}
+
+//ingreço x4
+void main() {
+    double ingr = 12.5;
+    print(ingr);
+    print(ingr * 4);
+}
+
+//Área = ((base maior + base menor) * altura) /2;
+void main() {
+    var base1 = 12.3;
+    var base2 = 45.6;
+    var alt = 78.9;
+    print(alt);
+    print(base1);
+    print(base2);
+    print(((base2 + base1)* alt)/2);
+}
+
+//Área do quadrado
+void main() {
+    var ld = 97;
+    print(ld);
+    print(ld * 4);
+}
+
+//compare nomes
+void main() {
+    String nm1 = "Isadora";
+    String nm2 = "Pedro";
+    print(nm1+" e "+nm2);
+    if(nm1 != nm2){
+    print("Nomes DIFERENTES");
+    }else{
+    print("Nomes IGUAIS");
+}
+}
