@@ -1,0 +1,38 @@
+// 1
+void main() {
+    
+    int limite = 100;
+    for (int i = 0; i <= limite; i++)
+    print(i);
+}
+
+
+//2
+void main() {
+for (int indice = 0; indice < 11; indice++){
+    print("n° $indice"); 
+  }
+  
+  
+  int i = 10;
+  
+  while(i <=10){
+    
+    print("O maior número é:");
+    print(i);
+    i++;
+  }
+ }
+
+//3
+
+void main() {
+  
+  int a = 1;
+  int b = 2;
+  
+   for(int i = 1200; i >= a; i -= b)
+   {
+    print(i);
+  }
+}
