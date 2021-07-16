@@ -1,0 +1,138 @@
+/*1. Escreva um procedimento que recebe as 3 notas de um aluno por parâmetro e uma letra. Se a letra for A o procedimento calcula a média aritmética das notas do aluno, se for B, a sua média ponderada (pesos: 5, 3 e 2) e se for C, a sua média harmônica. A média calculada também deve retornar por parâmetro.
+*/
+void main() 
+{ 
+  double resMult = calcMult(10.0, 9.0, 7.5);
+  print(resMult);
+}
+  double calcMult(double ca, double ce, double ci)                
+{
+  double res = (ca + ce + ci)/3 ;
+  double ress = (ca * 5 + ce * 3 + ci * 2)/10 ;
+  double reess = ((1/ca + 1/ce + 1/ci) /3);
+  return res;
+  return ress;
+  return reess;
+}
+
+
+//2. Escreva uma função que receba dois números inteiros retorne o menor número.
+void main() 
+{
+  print(nums(58 , 5));
+}
+
+double nums(int a, int b) => (a > b) ? "O 1° n° é maior: $a" : "O 2° n° é maior: $b";
+
+//3. Faça uma função que recebe por parâmetro um valor inteiro e positivo e retorna o valor lógico //Verdadeiro caso o valor seja primo e Falso em caso contrário.
+void main() 
+{
+  print(nums(3)); 
+}
+  String nums(int a) => (a / 2 == 2)
+    ? "O número NÃO é primo"
+    : "O número é primo";
+
+
+//4. Faça uma função que recebe um valor inteiro e verifica se o valor é positivo ou negativo. A função //deve retornar um valor booleano.
+void main() 
+{
+  print(num(-9));
+}
+String num(int a) => (a >= 0) 
+  ? "O número $a é POSITIVO" 
+  : "O número $a é NEGATIVO";
+
+//5. Faça uma função que leia um número não determinado de valores positivos e retorna a média //aritmética dos mesmos.
+void main() 
+{
+  print(nums(3, 4, 5, 6)); 
+}
+  double nums(int a,int b,int c,int d){
+  double res = (a+b+c+d)/4;   
+  return res;  
+} 
+
+//6. Escreva uma função que recebe, por parâmetro, receba 2 valores inteiros e positivo e retorna o //somatório desse valor.
+void main() 
+{
+  print('${nums(3, 4)}\n'
+        '${numr(5, 6)}\n'
+        '${numl(7, 8)}'); 
+}
+  int nums(int a, int b){
+  return (a + b); 
+} 
+  int numr(int a, int b){
+  return (a + b); 
+}
+  int numl(int a, int b){
+  return (a + b);
+}
+
+//7. Faça uma função que recebe a média final de um aluno por parãmetro e retorna o seu conceito, //conforme a tabela abaixo;
+0 - 4,9 D / 5 - 6,9 C / 7 - 8,9 B / 9 - 10  A
+
+8. Faça uma função que recebe a idade de um nadador por parâmetro e retorna , também por parâmetro, a categoria desse nadador de acordo com a tabela abaixo (imagem2):
+5 - 7 infatil A / 8 - 10 infantil B / 11 - 13 juvenil A / 14 - 17 juvenil B / 18 - ... adulto
+
+9. Faça uma função que recebe um valor inteiro e verifica se o valor é par. A função deve retornar 1 se o número for par e 0 se for ímpar;
+void main() 
+{
+  print(num(3));
+}
+String num(int a) => (a / 2 == 0) 
+  ? "1" 
+  : "0";
+
+
+10. Fazer um programa que receba 2 números e informe:
+  a) A soma dos números; b) O produto do primeiro número pelo quadrado do segundo;
+  c) O quadrado do primeiro número; d) O triplo do dobro da soma dos dois números
+  e) A metade do triplo do dobro da soma dos dois números f) O módulo do primeiro número.
+import 'dart:math' as Math;
+void main() {
+  int varil = num(10, 9);
+  print(varil);
+}
+  int num(int a,int b){
+  print("A soma dos números: ${Math.sqrt(a + b*b)}");
+  print("O produto do primeiro número pelo quadrado do segundo: ${Math.sqrt(a)}");
+  print("O quadrado do primeiro número: ${Math.sqrt(a*a)}");
+  print("O triplo do dobro da soma dos dois números: ${Math.sqrt(((a+b)*2)*3)}");
+  print("A metade do triplo do dobro da soma dos dois números: ${Math.sqrt((((a+b)*2)*3)/2)}");
+  print("O módulo do primeiro número.: ${Math.sqrt(a)}");
+  }
+
+
+11. Faça um programa que leia dois valores e imprima:
+a) se o primeiro valor for menor que o segundo, a lista de valores do primeiro até o segundo;
+b) se o primeiro valor for menor que o segundo a lista de valores do segundo até o primeiro em ordem decrescente;  c) se ambos forem iguais a mensagem "valores iguais".
+
+12. Crie uma calculadora utilizando funções (livre).
+void main() {
+  calc(15, 3.0);
+}
+void calc(double a, double b) 
+{
+  double som = (a + b);
+  double sub = (a - b);
+  double mult = (a * b);
+  double div = (a / b);
+
+  print("+ = $som");
+  print("- = $sub");
+  print("x = $mult");
+  print("/ = $div");
+}
+
+não consegui:
+9- 7 - 8 - 11
+
+
+
+
+
+
+
+
